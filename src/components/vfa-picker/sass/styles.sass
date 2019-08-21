@@ -1,0 +1,117 @@
+@import _variables.sass
+
+.vfa-container
+  display: flex
+  width: 100%
+  height: 100%
+  user-select: none
+  top: 0
+  left: 0
+  position: fixed
+  align-items: center
+  justify-content: center
+  background: rgba(0, 0, 0, 0.5)
+  color: $primary
+  z-index: 999999999999999999999999999999
+  *
+    margin: 0
+    box-sizing: border-box
+    padding: 0
+    outline: none
+    border: none
+    user-select: none
+
+.vfa-content
+  background: #f8f9fa
+  position: relative
+  overflow: hidden
+
+.vfa-header
+  height: 50px
+  width: 100%
+  box-sizing: border-box
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.vfa-icons-container
+  height: calc(100% - 50px)
+  width: 100%
+  padding-bottom: 50px
+
+.vfa-icons
+  height: 100%
+  display: flex
+  flex-wrap: wrap
+  overflow: auto
+  justify-content: space-evenly
+  align-items: center
+
+.vfa-pagination
+  position: absolute
+  width: 100%
+  height: 50px
+  left: 0
+  bottom: 0
+  display: flex
+  justify-content: space-between
+  background: $primary
+  align-items: center
+  padding: 0 10px
+  box-sizing: border-box
+  color: #fafafa
+
+.vfa-pagination-item
+  font-size: 40px
+  margin: 0 20px
+  cursor: pointer
+
+.vfa-icon
+  width: 100px
+  height: 65px
+  margin: 5px
+  border-radius: 5px;
+  text-align: center
+  cursor: pointer
+  .vfa-icon-preview
+    font-size: 40px
+    padding: 3px
+    display: block
+    color: $primary
+  &:hover, &.selected
+    background: $secondary
+    .vfa-icon-preview
+      color: #fafafa
+    .vfa-icon-info
+      background: #fff
+      .class
+        color: #414141
+
+.vfa-search
+  text-align: center
+  flex: 7
+  transition: all .3s linear
+  input
+    height: 40px
+    min-width: 260px
+    width: 98%
+    max-width: 400px
+    padding: 5px
+    color: #495057
+    background: transparent
+    transition: all .3s linear
+    border-bottom: 1px solid $primary
+    &:focus
+      background: transparent
+
+.vfa-icon-info
+  height: 25px
+  .class
+    font-size: 12px
+    line-height: 25px
+    color: #adb5bd
+    display: block
+    padding: 0 5px;
+    white-space: nowrap
+    overflow: hidden
+    text-overflow: ellipsis

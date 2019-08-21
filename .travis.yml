@@ -1,0 +1,16 @@
+language: node_js
+node_js: lts/*
+
+cache: yarn
+
+if: tag IS present
+
+before_script:
+  - yarn global add vuepress
+
+script:
+  - yarn lint
+  - yarn build
+  - yarn docs:build
+  - echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}'>.npmrc
+  - npm publish
