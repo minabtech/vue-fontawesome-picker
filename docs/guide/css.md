@@ -11,7 +11,7 @@ that are not using sass in their projects.
 
 Variables are leveraged in as much of the component styles as possible. If you really want to dig
 into the SCSS, the files are located in `src/components/vfa-picker/sass`. The variables listed below can be found at
-[`src/components/vfa-picker/sass/_variables`](https://github.com/zolamk/vfa-picker/blob/master/src/components/vfa-picker/sass/_variables.sass).
+[`src/components/vfa-picker/sass/_variables`](https://github.com/zolamk/vue-fontawesome-picker/blob/master/src/components/vfa-picker/sass/_variables.sass).
 
 All variables are implemented with `!default` in order to make them easier to override in your
 application.
