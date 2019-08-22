@@ -16,7 +16,7 @@ into the SCSS, the files are located in `src/components/vfa-picker/sass`. The va
 All variables are implemented with `!default` in order to make them easier to override in your
 application.
 
-<<< @/src/components/vfa-picker/sass/\_variables.sass
+<<< @/src/components/vfa-picker/sass/_variables.sass
 
 ## Overriding Default Styles
 
